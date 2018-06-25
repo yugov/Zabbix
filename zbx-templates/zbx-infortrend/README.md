@@ -124,10 +124,13 @@ Installation
   * 2 => Cold Temp. Warning
   * 3 => Hot Temp. Warning
   * 4 => Cold Temp. Limit Exceeded
-11. Import **zbx-ift-sa.xml** file into Zabbix.
-12. Add to your host the **{$SNMP_COMMUNITY}** macro with your SNMP community as value.
-13. Configure **Host Inventory** to `Automatic` for your host.
-14. Associate **ZBX-IFT-SA** template to the host.
+11. Add a value mapping named `System status` with the following values (Zabbix 3.X only):
+  * 0 = UP
+  * 2 = Unreachable
+12. Import **zbx-ift-sa.xml** file into Zabbix.
+13. Add to your host the **{$SNMP_COMMUNITY}** macro with your SNMP community as value.
+14. Configure **Host Inventory** to `Automatic` for your host.
+15. Associate **ZBX-IFT-SA** template to the host.
 
 ### Requirements
 
